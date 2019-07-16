@@ -153,16 +153,10 @@ body
 }
 
 
-.card-deck
-{
-    padding: 12px;
-}
 
 
-.card-body
-{
 
-}
+
 
 
 footer
@@ -187,16 +181,30 @@ li
 {
 
    border-radius: 50px;
-    background-color: slategray;
+    background-color: #90868c;
 }
 .navbar-brand
 {
     border-radius: 30px;
-    background-color: seagreen;
+    background-color: #90868c;
 }
 
 .nav-link
 {
     border-radius: 20px;
-    background-color: seagreen;
+    background-color: #90868c;
+}
+/*css page service*/
+
+.diffrent
+{
+    width: 40%;
+    height: 30%;
+
+    padding: 12px;
+    margin: auto;
+}
+.card-deck
+{
+    padding: 12px;
 }

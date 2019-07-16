@@ -3,9 +3,11 @@
 namespace App\Controller;
 
 
+use App\Entity\Commentaires;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Devis;
@@ -38,7 +40,7 @@ class ProjetfinalController extends AbstractController
             $manager->persist($devis);
             $manager->flush();
 
-            return $this->redirectToRoute('service', ['id' => $devis->getId()]);
+            return $this->redirectToRoute('home', ['id' => $devis->getId()]);
 
 
 
@@ -46,7 +48,7 @@ class ProjetfinalController extends AbstractController
 
 
         return $this->render('projetfinal/index.html.twig', [
-            'formDevis' => $form->createview()
+            'formDevis' => $form->createView()
 
         ]);
     }
@@ -85,10 +87,27 @@ class ProjetfinalController extends AbstractController
     /**
      * @Route("comments", name="comments")
      */
-    public function commentaire()
+    public function commentaire(Request $request, ObjectManager $manager)
     {
+
+        $commentaire = new Commentaires();
+
+        $form = $this->createFormBuilder($commentaire)
+
+            ->add('prenom')
+            ->add('age')
+            ->add('content', TextareaType::class)
+
+
+            ->getForm();
+        $form->handleRequest($request);
+
+
+
+
+        dump($commentaire);
         return $this->render('projetfinal/commentaires.html.twig', [
-            'controller_name' => 'BesoinsquotidiensController',
+            'formCommentaire' => $form->createView()
         ]);
     }
 

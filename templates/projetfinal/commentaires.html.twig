@@ -1,10 +1,22 @@
 {% extends 'base.html.twig' %}
-
+{% form_theme formCommentaire 'bootstrap_4_layout.html.twig' %}
 {% block title %}
     commentaires
 {% endblock %}
 
 
 {% block body %}
-    hello sur commentaires c'est quoi ca!!!!!
+ <h1>Creatio, d'un article </h1>
+    <div class="diffrent">
+        <form class="form-group">
+            <h4>Béneficiez d'un Devis gratuit</h4>
+            {{ form_start(formCommentaire) }}
+
+            {{ form_row(formCommentaire.prenom, {'attr': {'placeholder': "pièrre"}}) }}
+            {{ form_row(formCommentaire.age, {'attr': {'placeholder': "77 ans"}}) }}
+            {{ form_row(formCommentaire.content, {'attr': {'placeholder': "votre commentaire"}}) }}
+            <button type="submit" class="btn btn-success">Ajouter</button>
+            {{ form_end(formCommentaire) }}
+        </form>
+    </div>
 {% endblock %}
