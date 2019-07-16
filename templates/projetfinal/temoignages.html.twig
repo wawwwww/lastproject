@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div id="conteneur">
+
+        <div class="element1">
+            <p><img class="photo" src="{{ asset('personne1_age.jpg') }} " alt="personne agée"></p>
+
+            <p class="para">Alain</p><br>
+            <p class="text">luoise 89 ans emploi une aide à domicile pour laider dans  </p>
+
+            <button type="button" class="btn btn-secondary"> <a href="{{ path('comments') }}">Commentaire</a></button>
+        </div>
+
+
+        <div class="element2">
+            <p><img class="photo" src="{{ asset('personne-agee4.jpg') }} " alt="personne agée"></p>
+
+            <p class="para">Laurence</p>
+            <p class="text">depuis que j'emploi une aide à domicile ma via a beaucoup changer</p>
+
+            <button type="button" class="btn btn-secondary"><a href="{{ path('comments') }}">Commentaire</a></button>
+
+        </div>
+        <div class="element3">
+            <p><img class="photo" src="{{ asset('couple-age-1.jpg') }} " alt="personne agée"></p>
+
+            <p class="para">Marie&Christophe</p>
+            <p class="text">depuis que j'emploi une aide à domicile ma via a beaucoup changer</p>
+
+            <button type="button" class="btn btn-secondary" title=""> <a href="{{ path('comments') }}">Commentaire</a></button>
+        </div>
+
+    </div>
+
+{% endblock %}

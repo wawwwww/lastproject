@@ -1,0 +1,202 @@
+/*page d'accueil*/
+h1
+{
+
+
+
+    text-shadow: 8px 8px 8px black;
+}
+
+
+
+/*
+css page temoignage(commentaire)
+
+ */
+#conteneur
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.element1{
+
+    width: 25%;
+    height: 300px;
+    flex-shrink: 2;
+
+
+}
+.element2{
+
+    width: 25%;
+    height: 300px;
+
+}
+.element3
+{
+
+    width: 25%;
+    height: 300px;
+
+}
+
+.droit
+{
+    text-align: right;
+}
+p{
+    text-align: center;
+}
+.para
+{
+    font-size: 20px;
+    text-shadow: 6px 6px 6px black;
+}
+.photo
+{
+    border-radius:50px;
+    width:110px;
+    height:100px;
+}
+
+
+
+
+
+.larg
+{
+    width: 40%;
+    height: 30%;
+
+    padding: 12px;
+}
+main{
+    background-color: black;
+
+
+}
+
+h4
+{
+    color: white;
+    text-align: center;
+}
+.container
+{
+    color: white;
+}
+
+.doni
+{
+    text-align: center;
+}
+
+
+
+.telephone
+{
+    color: green;
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.soulignier
+{
+    text-decoration: underline;
+    padding: 12px;
+}
+
+.imageaccueil
+{
+    width: 40%;
+    background-position: top right;
+}
+
+
+.text{
+    text-align: justify;
+    font-style: italic;
+}
+
+.flottant
+{
+    float: left;
+}
+
+
+
+.d-flex
+{
+
+    text-align: right;
+}
+
+.label
+{
+    margin: auto;
+}
+
+
+.colorpage
+{
+    padding: 20px;
+    margin: auto;
+}
+
+body
+{
+    padding: 12px;
+}
+
+
+.card-deck
+{
+    padding: 12px;
+}
+
+
+.card-body
+{
+
+}
+
+
+footer
+{
+    background-color: #565656;
+}
+
+
+
+
+
+.card-body
+{
+text-align: center;
+}
+.card-text
+{
+    text-align: justify;
+}
+/*fichier de base*/
+li
+{
+
+   border-radius: 50px;
+    background-color: slategray;
+}
+.navbar-brand
+{
+    border-radius: 30px;
+    background-color: seagreen;
+}
+
+.nav-link
+{
+    border-radius: 20px;
+    background-color: seagreen;
+}
